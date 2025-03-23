@@ -1,0 +1,9 @@
+langchain-community
+langchain-ollama
+langchain-core
+langchain
+chromadb
+langchain-huggingface
+pymupdf
+sentence-transformers
+numpy<2
