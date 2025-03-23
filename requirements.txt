@@ -7,3 +7,4 @@ langchain-huggingface
 pymupdf
 sentence-transformers
 numpy<2
+unstructured
