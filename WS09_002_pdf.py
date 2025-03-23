@@ -45,11 +45,14 @@ if __name__ == "__main__":
     # ==============================
     # 3) เลือกโมเดล Embeddings
     # ==============================
-    # เปลี่ยนจากการใช้ HuggingFaceEmbeddings เป็น OllamaEmbeddings
-    # embedding_model_name = "sentence-transformers/LaBSE"  # LaBSE มันเป็น model ที่รองรับภาษาไทยไง
+    # เนื่องจากมีปัญหาความเข้ากันไม่ได้ระหว่าง torch และ transformers
+    # จึงกลับมาใช้ OllamaEmbeddings แทน
+    # 
+    # หากต้องการใช้ HuggingFaceEmbeddings ที่รองรับภาษาไทย ต้องแก้ไขปัญหาความเข้ากันไม่ได้ของเวอร์ชันก่อน
+    # embedding_model_name = "sentence-transformers/LaBSE"
     # thai_embedding = HuggingFaceEmbeddings(
     #     model_name=embedding_model_name,
-    #     model_kwargs={"device": "cpu"}  # เปลี่ยนเป็น "cuda" หากต้องการใช้ GPU
+    #     model_kwargs={"device": "cpu"}
     # )
     
     # ใช้ OllamaEmbeddings แทน
