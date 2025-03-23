@@ -9,6 +9,11 @@
 3. `pip install -r requirements.txt`
 4. `python WS09_002_pdf.py`
 
+## Now working well in:
+- WS09_0001.py
+- WS09_0002_pdf.py
+- WS09_0002_txt_fixed.py
+- WS09_0002_web_fixed.py
 
 
 ### Working in path
